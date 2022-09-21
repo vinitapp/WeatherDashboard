@@ -12,8 +12,8 @@ A web application that shows the 5 day weather forecast for the preferred locati
 <a href="https://vinitapp.github.io/WeatherDashboard/">Deployed link</a>
 
 # Screenshots
-<img src="./assets/images/Screen1" alt="Weather Dashboard">
-<img src="./assets/images/Screen2" alt="5 day weather forecast">
+<img src="./assets/images/Screen1.png" alt="Weather Dashboard">
+<img src="./assets/images/Screen2.png" alt="5 day weather forecast">
 
 
 
