@@ -74,34 +74,14 @@ function getWeatherToday() {
 		//Humidity
 		var pElHumid = $('<p>').text(`Humidity: ${response.main.humidity} %`);
 		cardTodayBody.append(pElHumid);
+		//Wind Speed
+		var pElWind = $('<p>').text(`Wind Speed: ${response.wind.speed} MPH`);
+		cardTodayBody.append(pElWind);
 		//Set the lat and long from the searched city
 		var cityLon = response.coord.lon;
 		// console.log(cityLon);
 		var cityLat = response.coord.lat;
 		// console.log(cityLat);
-
-		// $.ajax({
-		// 	url: getUrlUvi,
-		// 	method: 'GET',
-		// }).then(function (response) {
-		// 	var pElUvi = $('<p>').text(`UV Index: `);
-		// 	var uviSpan = $('<span>').text(response.current.uvi);
-		// 	var uvi = response.current.uvi;
-		// 	pElUvi.append(uviSpan);
-		// 	cardTodayBody.append(pElUvi);
-		// 	//set the UV index to match an exposure chart severity based on color 
-		// 	if (uvi >= 0 && uvi <= 2) {
-		// 		uviSpan.attr('class', 'green');
-		// 	} else if (uvi > 2 && uvi <= 5) {
-		// 		uviSpan.attr("class", "yellow")
-		// 	} else if (uvi > 5 && uvi <= 7) {
-		// 		uviSpan.attr("class", "orange")
-		// 	} else if (uvi > 7 && uvi <= 10) {
-		// 		uviSpan.attr("class", "red")
-		// 	} else {
-		// 		uviSpan.attr("class", "purple")
-		// 	}
-		// });
 	});
 	getFiveDayForecast();
 };
